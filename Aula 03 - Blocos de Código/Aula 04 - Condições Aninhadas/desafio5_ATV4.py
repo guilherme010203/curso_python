@@ -9,8 +9,11 @@ somaBC = retaB + retaC
 if somaAB > retaC and somaAC > retaB and somaBC > retaA :
     print("foi possivel formar um Equilátero:")
 
-elif   somaAC > retaA and somaBC > retaC and somaAB > retaA:
-    print(f"foi possivel formar um Isósceles:")
-
-elif  somaBC> retaB and somaAB > retaA and somaAC > retaC: 
-    print(f"foi possivel formar um Escaleno")   
+if retaA == retaB == retaC:
+    print("o triangulo formado foi o Equilátero")
+    
+elif retaA != retaB != retaC != retaA:
+     print("o triangulo formado Escaleno")   
+     
+else:
+    print("o triangulo formado foi o Isósceles:")     
