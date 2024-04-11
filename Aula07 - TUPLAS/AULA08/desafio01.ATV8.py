@@ -1,9 +1,8 @@
 numeros = (int(input('Digite um número: ')),int(input('Digite um número: ')),int(input('Digite um número:  ')),int(input('Digite um número:  ')),int(input('Digite um número:  ')))
 maior = (max(numeros))
-posicao = numeros.index
-print(f"O maior valor foi {maior}") 
-
 menor = (min(numeros))
-print(f"O menor valor foi {menor}") 
+posicao_maior = numeros.index(maior) + 1
+posicao_menor = numeros.index(menor) + 1
 
-print(posicao)
+print(f"O menor valor foi {menor} ele se encontra na posição {posicao_menor}")
+print(f"O maior valor foi {maior} ele se encontra na posição {posicao_maior}") 
